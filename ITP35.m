@@ -120,7 +120,7 @@ S_2_hovmoller_rel2maxN2_deep_field = [];
 for i = 1:1357 % total number of profiles (1079/1357)
     % i
     % PART ONE - this loads the data from the folder
-    fmt = 'Desktop/itp35cormat/cor%04d.mat';
+    fmt = '';
     fname = sprintf(fmt, i);
     profiles_ITP35_V = open(fname);
 
