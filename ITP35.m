@@ -367,7 +367,7 @@ for i = 1:1357 % total number of profiles (1079/1357)
     d_meridional_V_dz_SG = -movingslope(meridional_V_CG_int, SG_window, SG_order, SG_delta); % A savinsky golay moving average on the meridional velocity data
     %
     % 2) Construct the S^2 field as S^2 = (du_dz)^2 + (dv_dz)^2
-    S_2_CG_int = (d_zonal_V_dz_SG.^2 + d_meridional_V_dz_SG.^2)*((2*pi)^2); % The (i) interpolated, (ii) Savinsky-Golay filtered shear and (iii) in Hz^2.
+    S_2_CG_int = (d_zonal_V_dz_SG.^2 + d_meridional_V_dz_SG.^2); % The (i) interpolated, (ii) Savinsky-Golay filtered shear and (iii) in Hz^2.
     % 
     % 
     % Second Part: To estimate the width of S^2 etc., we can do things in a
